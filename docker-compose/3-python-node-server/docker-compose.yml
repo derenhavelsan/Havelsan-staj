@@ -1,0 +1,13 @@
+version: "3.4"
+services:
+  python-server:
+    container_name: python
+    image: python-docker
+    ports:
+      - 5000:5000
+  node-server:
+    container_name: node
+    image: node-server
+    ports:
+      - 3001:3000
+  
